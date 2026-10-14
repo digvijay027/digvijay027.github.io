@@ -133,3 +133,14 @@ body{overflow-x:hidden}
   .service-cta .btn{width:100%}
   .contact-actions .btn{width:100%}
 }
+
+/* --- Independent project card link actions --- */
+.project-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.link-source{font-size:13px;font-weight:800;color:var(--muted);display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:6px 12px;border-radius:999px;transition:gap .2s ease,color .2s ease,border-color .2s ease;width:fit-content;cursor:pointer;user-select:none}
+.link-source:hover{gap:8px;color:var(--text);border-color:rgba(255,255,255,.35)}
+
+/* --- Consistent bottom alignment for all freelance card action links --- */
+.freelance-project-grid .project-content{display:flex;flex-direction:column;flex:1}
+.freelance-project-grid .project-links,
+.freelance-project-grid .status{margin-top:auto;align-self:flex-start}
+.freelance-project-grid .link-source{align-self:flex-start}
